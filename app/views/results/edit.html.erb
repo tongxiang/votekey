@@ -1,0 +1,20 @@
+<h1>Editing result</h1>
+
+<% form_for(@result) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :client_id %><br />
+    <%= f.text_field :client_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @result %> |
+<%= link_to 'Back', results_path %>

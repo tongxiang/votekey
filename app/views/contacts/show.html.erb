@@ -1,0 +1,18 @@
+<p>
+  <b>User:</b>
+  <%=h @contact.user_id %>
+</p>
+
+<p>
+  <b>Voter:</b>
+  <%=h @contact.voter_id %>
+</p>
+
+<p>
+  <b>Result:</b>
+  <%=h @contact.result_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>

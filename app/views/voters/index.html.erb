@@ -1,0 +1,28 @@
+<h1>Listing voters</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Phone number</th>
+    <th>Age</th>
+    <th>Sex</th>
+  </tr>
+
+<% @voters.each do |voter| %>
+  <tr>
+    <td><%=h voter.first_name %></td>
+    <td><%=h voter.last_name %></td>
+    <td><%=h voter.phone_number %></td>
+    <td><%=h voter.age %></td>
+    <td><%=h voter.sex %></td>
+    <td><%= link_to 'Show', voter %></td>
+    <td><%= link_to 'Edit', edit_voter_path(voter) %></td>
+    <td><%= link_to 'Destroy', voter, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New voter', new_voter_path %>

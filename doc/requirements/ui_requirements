@@ -1,0 +1,34 @@
+VoteKey Phonebank UI Requirements
+  Header: Campaign name and small "Powered by VoteKey"
+  Footer: Copyright VoteKey 2010 - Help Contact
+
+Login Page:
+  Email
+  Password
+  Submit To: "user_sessions/create"
+
+Registration Page:
+  First Name
+  Last Name
+  Email
+  Password
+  Password Confirmation
+  Campaign Key
+  Submit To: "users/create"
+
+Dashboard:
+  Button to start making calls link to: "contacts/new"
+  Total Calls made by client
+  Total Calls made by User
+  Leaderboard
+  Bar Graph for 1's, 2's, 3's, 4's, 5's
+
+Call Page:
+  Voter Name
+  Voter Phone Number
+  Script
+  Result Selector: 
+    - Not a radio button, or select field
+    - Use links for Not Home, Wrong Number, 1's, 2's, 3's, 4's, 5's 
+    - Should use a hidden field called result_id which is dynamically changed by js
+  Submit To: "contacts/create"

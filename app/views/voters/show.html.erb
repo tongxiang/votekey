@@ -1,0 +1,28 @@
+<p>
+  <b>First name:</b>
+  <%=h @voter.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%=h @voter.last_name %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%=h @voter.phone_number %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%=h @voter.age %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%=h @voter.sex %>
+</p>
+
+
+<%= link_to 'Edit', edit_voter_path(@voter) %> |
+<%= link_to 'Back', voters_path %>
