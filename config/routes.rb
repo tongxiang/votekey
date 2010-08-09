@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resource :account, :controller => "users"
   
-  map.resource :user_sessions
+  map.resources :user_sessions
 
   map.resources :results
 
