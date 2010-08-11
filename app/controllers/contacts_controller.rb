@@ -95,5 +95,6 @@ class ContactsController < ApplicationController
       voter.locked = false
       voter.save
     end
+    redirect_to :controller => "contacts", :action => "new"
   end
 end
