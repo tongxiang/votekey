@@ -18,6 +18,7 @@ class UsersController < ApplicationController
   
   def show
     @user = @current_user
+    redirect_to :controller => "contacts", :action => "new"
   end
 
   def edit
