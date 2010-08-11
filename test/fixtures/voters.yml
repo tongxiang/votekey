@@ -1,9 +1,98 @@
-<% 9.times.do |n| %>
 one:
-  id: <%= n %>
+  id: 1
   first_name: "Voter"
-  last_name: <%= n.to_s %>
-  phone_number: "802735597" + <%= n.to_s %>
+  last_name: "1"
+  phone_number: "8027355971"
+  age: "20"
+  sex: "Male"
+  client_id: 1 
+  locked: false
+  
+two:
+  id: 2
+  first_name: "Voter"
+  last_name: "2"
+  phone_number: "8027355972"
+  age: "20"
+  sex: "Male"
+  client_id: 1 
+  locked: false
+  
+three:
+  id: 3
+  first_name: "Voter"
+  last_name: "3"
+  phone_number: "8027355973"
+  age: "20"
+  sex: "Male"
+  client_id: 1 
+  locked: false
+  
+four:
+  id: 4
+  first_name: "Voter"
+  last_name: "4"
+  phone_number: "8027355974"
+  age: "20"
+  sex: "Male"
+  client_id: 1 
+  locked: false
+  
+five:
+  id: 5
+  first_name: "Voter"
+  last_name: "5"
+  phone_number: "8027355975"
+  age: "20"
+  sex: "Male"
+  client_id: 1 
+  locked: false
+  
+six:
+  id: 6
+  first_name: "Voter"
+  last_name: "6"
+  phone_number: "8027355976"
+  age: "20"
+  sex: "Male"
+  client_id: 1 
+  locked: false
+  
+seven:
+  id: 7
+  first_name: "Voter"
+  last_name: "7"
+  phone_number: "8027355977"
+  age: "20"
+  sex: "Male"
+  client_id: 1 
+  locked: false
+  
+eight:
+  id: 8
+  first_name: "Voter"
+  last_name: "8"
+  phone_number: "8027355978"
+  age: "20"
+  sex: "Male"
+  client_id: 1 
+  locked: false
+  
+nine:
+  id: 9
+  first_name: "Voter"
+  last_name: "9"
+  phone_number: "8027355979"
+  age: "20"
+  sex: "Male"
+  client_id: 1 
+  locked: false
+  
+ten:
+  id: 10
+  first_name: "Voter"
+  last_name: "10"
+  phone_number: "8027355980"
   age: "20"
   sex: "Male"
   client_id: 1 
