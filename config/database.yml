@@ -22,5 +22,4 @@ production:
   timeout: 5000
   username: root
   password: Q6Iu8222331v6U
-  socket: /tmp/mysql.sock
   host: localhost
