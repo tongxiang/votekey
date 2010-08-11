@@ -44,6 +44,6 @@ class ApplicationController < ActionController::Base
   end
   
   def set_current_client
-    @current_client = Client.subdomain_finder(request.subdomains.first)
+    @current_client = Client.subdomain_finder(request.subdomains.first).first
   end
 end

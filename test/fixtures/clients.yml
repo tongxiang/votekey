@@ -1,9 +1,7 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  subdomain: MyString
-
-two:
-  name: MyString
-  subdomain: MyString
+georgeforberkeley:
+  id: 1
+  name: "George for Berkeley"
+  subdomain: "george"
+  key: "gfb2010"
+  candidate: "George Beier"
+  office: "Berkeley City Council"

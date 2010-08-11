@@ -7,8 +7,12 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :email
   
   def new_contact
-    voter = self.client.voters.find(:conditions => {:locked => false}).lock
-    return Contact.create(:voter => voter, :user => self, :client => self.client)
+    voter = self.client.voters.pull_unlocked
+    if !voter.nil?
+      voter.lock
+      return Contact.create(:voter => voter, :user => self, :client => self.client)
+    end
+    return false
   end
   
   def total_contacts

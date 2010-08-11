@@ -13,4 +13,12 @@ class Voter < ActiveRecord::Base
     self.save
     return self
   end
+  
+  def name
+    return self.first_name + " " + self.last_name
+  end
+  
+  def self.pull_unlocked
+    return Voter.first(:conditions => {:locked => false})
+  end
 end

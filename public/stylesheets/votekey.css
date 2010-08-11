@@ -1,0 +1,314 @@
+/* @group resets */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+:focus {
+	outline: none;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+	color: #666;
+	letter-spacing: normal;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	background-color: #fff;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/* @end */
+
+/* @group globals */
+*{
+	text-rendering: optimizeLegibility;
+}
+
+* a{
+	position: relative;
+	outline: none;
+	text-decoration: none;
+	color: #6BC6FF;
+	cursor: pointer;
+}
+* a:active{
+	top: 1px;
+}
+br.c{
+	clear: both;
+}
+input, textarea{
+	/*font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;*/
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-size: 12px;
+	border: 1px solid #ececec;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: #999;
+}
+input:focus, textarea:focus{
+	background-color: #f7f7f7;
+}
+.active, a.active{
+	color: #6BC6FF;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+#wrapper{
+	width: 970px;
+	margin: 0px auto;
+}
+/* @end */
+
+
+
+/* @group login */
+#loginBox{
+	margin: 0px auto;
+	width: 400px;
+	height: 355px;	
+	padding: 20px;
+	background-color: #6fd9ef;
+	
+	margin-top: 100px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	/*
+	border-bottom: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	*/
+}
+#loginBox input{
+	margin: 0px auto;
+	display: block;
+	width: 340px;
+	height: 40px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-top: 1px solid #ccc;
+	border-color: #e5e5e5;
+	border-width: 0px;
+	background-color: #a3effe;
+	color: #fff;
+	font-size: 22px;
+	font-weight: normal;
+	padding-left: 10px;
+	margin-bottom: 0px;
+}
+#loginBox label{
+	margin-left: 30px;
+	position: relative;
+	top: -34px;
+	color: #6fd9ef;
+	font-size: 18px;
+	font: 22px "Lucida Grande", Lucida, Verdana, sans-serif;
+	letter-spacing: -1px;
+}
+#loginLogo{
+	width: 321px;
+	height: 117px;
+	display: block;
+	background-image: url(../images/vkLogoWhite.png);
+	margin: 0px auto;
+	opacity: .9;
+}
+#headerLogo{
+	display: inline-block;
+	width: 161px;
+	height: 59px;
+	background-image: url(../images/vkHeaderLogo.png);		
+}
+#clientName{
+	margin: 0px auto;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	color: #458e9e;
+	font: bold 24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+	color:#fff;
+	
+}
+.button{
+	background-color: #555;
+	display: inline-block;
+	padding:10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	
+}
+#loginButton{
+	float: right;
+	margin-right: 25px;
+	margin-top: 0px;
+}
+#loginButton:hover{
+	color: #a3effe;
+}
+/* @end */
+
+/* @group header */
+#header{
+	margin-top: 20px;
+	width: 100%;
+	height: 55px;
+	margin-bottom: 40px;
+}
+#header #headerLogo{
+	float: left;
+	opacity: .9;
+}
+#clientTitle{
+	float: left;
+	margin-top: 24px;
+	margin-left: 5px;
+	color: #777;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+#logout{
+	float: right;
+	color: #ccc;
+	margin-top: 28px;
+	font-size: 13px;
+}
+#logout:hover{
+	color: #777;
+	background-repeat: repeat-y;
+}
+
+/* @end */
+#content{
+	min-height: 500px;
+}
+#footer{
+	display: block;
+	width: 100%;
+	font-size: 12px;
+}
+#footer a{
+	color: #777;
+	margin-left: 15px;
+}
+#callBox{
+	display: block;
+	width: 550px;
+	background-color: #f1f1f1;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0px auto;
+	padding: 25px;
+	padding-bottom: 60px;
+	/*
+	border: 1px solid #ccc;
+	background: #fff;
+	*/
+}
+#callBox h1{
+	font: 28px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: bold;
+	color: #888;
+	margin-bottom: 15px;
+	margin-top: -8px;
+	float: left;
+}
+#callBox h2{
+	font-size: 22px;
+	color: #25d6fd;
+	font-weight: bold;
+	margin-bottom: 10px;
+	float: left;
+}
+#callBox span{
+	float: left;
+	display: block;
+	width: 80%;
+	line-height: 28px;
+	margin-top: 10px;
+	margin-bottom: 45px;
+	text-align: justify;
+	font-size: 16px;
+	color: #555;
+}
+#callBox hr{
+	border: 1px solid #ddd;
+	display: none;
+}
+.badNews{
+	float: left;
+	background-color: #ff8965;
+	margin-right: 15px;
+}
+.numButton{
+	width: 18px;
+	text-align: center;
+	font-weight: bold;
+	float: right;
+	margin-left: 15px;
+}
+#n1{
+	opacity: .2;
+}
+#n2{
+	opacity: .4;
+}
+#n3{
+	opacity: .6;
+}
+#n4{
+	opacity: .8;
+}
+#n5{
+	opacity: 1;
+}
+#callBox .button{
+	
+}
+#callBox .button:hover{
+	opacity: 1 !important;
+	background-color: #25d6fd;
+}

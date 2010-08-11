@@ -29,8 +29,12 @@ class ContactsController < ApplicationController
     @contact = @current_user.new_contact
     
     respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @contact }
+      if !@contact
+        format.html { redirect_to :action => "completed"}
+      else
+        format.html # new.html.erb
+        format.xml  { render :xml => @contact }
+      end
     end
   end
 
@@ -42,7 +46,8 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.xml
   def create
-    @contact = Contact.locked_id_finder(params[:id]).set_result(params[:result_id])
+    @contact = Contact.find(params[:id])
+    @contact.set_result(Result.find(params[:result_id])).save
 
     respond_to do |format|
       if @contact.save
@@ -82,6 +87,13 @@ class ContactsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(contacts_url) }
       format.xml  { head :ok }
+    end
+  end
+  
+  def unlock
+    Voter.all.each do |voter|
+      voter.locked = false
+      voter.save
     end
   end
 end

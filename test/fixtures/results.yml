@@ -1,9 +1,36 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
+  id: 1
   client_id: 1
   name: 1
 
 two:
+  id: 2
   client_id: 1
-  name: 1
+  name: 2
+  
+three:
+  id: 3
+  client_id: 1
+  name: 3
+
+four:
+  id: 4
+  client_id: 1
+  name: 4
+
+five:
+  id: 5
+  client_id: 1
+  name: 5
+  
+wrong_number:
+  id: 6
+  client_id: 1
+  name: "Wrong Number"
+  
+not_home:
+  id: 7
+  client_id: 1
+  name: "Not Home"

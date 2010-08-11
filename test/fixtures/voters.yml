@@ -1,15 +1,10 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
+<% 9.times.do |n| %>
 one:
-  first_name: MyString
-  last_name: MyString
-  phone_number: MyString
-  age: MyString
-  sex: MyString
-
-two:
-  first_name: MyString
-  last_name: MyString
-  phone_number: MyString
-  age: MyString
-  sex: MyString
+  id: <%= n %>
+  first_name: "Voter"
+  last_name: <%= n.to_s %>
+  phone_number: "802735597" + <%= n.to_s %>
+  age: "20"
+  sex: "Male"
+  client_id: 1 
+  locked: false

@@ -1,0 +1,23 @@
+<br class="clear" />
+<div id="content" class="callTool">
+	<div id="callBox">
+		<h1>Phone Bank</h1>
+		<br class="c" />
+		<h2><%= contact.voter.name %></h2>
+		<br class="c" />
+		<h2><%= contact.voter.phone_number %></h2>
+		<br class="c" />
+		<span>Hi <b><%= contact.voter.first_name %></b>, 
+		this is <%= @current_user.first_name %> with the <%= @current_client %> campaign.  
+		Do you support <%= @current_client.name %> for <%= @current_client.office %>? </span>
+		<br class="c" />
+		<hr />
+		<a href="<%= url_for :controller => "contacts", :action => "create", :id => contact.id, :result_id => 6 %>" id="notHome" class="button badNews">Not Home</a>
+		<a href="<%= url_for :controller => "contacts", :action => "create", :id => contact.id, :result_id => 7 %>" id="wrongNumber" class="button badNews">Wrong Number</a>
+		<a href="<%= url_for :controller => "contacts", :action => "create", :id => contact.id, :result_id => 5 %>" id="n5" class="button numButton">5</a>
+		<a href="<%= url_for :controller => "contacts", :action => "create", :id => contact.id, :result_id => 4 %>" id="n4" class="button numButton">4</a>
+		<a href="<%= url_for :controller => "contacts", :action => "create", :id => contact.id, :result_id => 3 %>" id="n3" class="button numButton">3</a>
+		<a href="<%= url_for :controller => "contacts", :action => "create", :id => contact.id, :result_id => 2 %>" id="n2" class="button numButton">2</a>
+		<a href="<%= url_for :controller => "contacts", :action => "create", :id => contact.id, :result_id => 1 %>" id="n1" class="button numButton">1</a>
+	</div>
+</div>

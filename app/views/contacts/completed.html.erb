@@ -1,0 +1,12 @@
+<br class="clear" />
+<div id="content" class="callTool">
+  <div id="callBox">
+    <h1>Calls Complete</h1>
+    <br class="c" />
+    <span>There are no more voters left to contact.</span>
+		<br class="c" />
+		<span>You contacted <%= @current_user.contacts.today_finder.count %> voters today out of <%= Contact.today_finder.count %>.</span>
+    <br class="c" />
+    <hr />
+  </div>
+</div>

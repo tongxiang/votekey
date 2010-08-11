@@ -7,16 +7,7 @@
 </head>
 <body>
   <div id="wrapper">
-    <div id="header">
-      <a id="headerLogo"></a>
-      <a id="clientTitle"><%= @current_client %></a>
-      <% if !@current_user.nil? %><a href="<%= url_for :controller => "user_sessions", :action => "destroy" %>" id="logout">logout</a><% end %>
-    </div>
     <%= yield %>
-    <div id="footer">
-      <span class="l">&copy; Votekey 2010</span>
-      <span class="r"><a href="#">Help</a><a href="#">Contact</a></span>
-    </div>
   </div>
   <script type="text/javascript" src="js/lib/jquery.js"></script>
 </body>

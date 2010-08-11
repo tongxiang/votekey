@@ -1,0 +1,17 @@
+<div id="loginBox">
+      <span id="loginLogo"></span>
+      <br />
+      <span id="clientName"><%= @current_client %></span>
+      <br />
+			<% form_for @user_session do |f| %>
+      <input type="text" name="email" />
+      <label for="email">email</label>
+      
+      <input type="password" name="password" />
+      
+      <label for="password">password</label>
+      <br class="c" />
+      <a href="calltool.html" id="loginButton" class="button">Login</a>
+			<% end %>
+</div>    
+<script type="text/javascript" src="js/lib/jquery.js"></script>

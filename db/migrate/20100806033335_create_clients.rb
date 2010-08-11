@@ -4,6 +4,8 @@ class CreateClients < ActiveRecord::Migration
       t.string :name
       t.string :subdomain
       t.string :key
+      t.string :candidate
+      t.string :office
       t.timestamps
     end
   end

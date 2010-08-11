@@ -16,4 +16,8 @@ class Client < ActiveRecord::Base
     end
     return result_aggregates
   end
+  
+  def to_s
+    return self.name
+  end
 end

@@ -5,7 +5,7 @@ class CreateContacts < ActiveRecord::Migration
       t.integer :voter_id
       t.integer :result_id
       t.integer :client_id
-      
+      t.date    :date
       t.timestamps
     end
   end
