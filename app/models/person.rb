@@ -1,6 +1,4 @@
-class User < ActiveRecord::Base
-  
-  acts_as_authentic
+class Person < ActiveRecord::Base
   
   belongs_to :campaign
   
